@@ -1,0 +1,173 @@
+body{
+    line-height: 2;
+}
+
+
+header, nav{
+    padding: 0% 2% 5% 0%;
+    margin: 1%;
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    padding: 1%;
+    margin: 1%;
+    background-color: rgb(219, 212, 246);
+    font-size: 1em;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    color: blue;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 4px;
+}
+
+
+h1{
+   /*Set font and font size*/
+   font-size: 2.5em;
+   font-family: 'Times New Roman', Times, serif;
+
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    /*Set font size*/
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin: 15px;
+
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: 3px solid black;
+    border-radius: 20px;
+
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    box-shadow: 3px 3px black;
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */
+    box-shadow: -3px 3px black;
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+    box-shadow: 3px 3px black, -3px 3px black;
+}
+
+p + p {
+     /* Set indentation */
+     text-indent: 20px;
+  }
+
+p{
+     /* Set margin */
+        margin: 20px;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    list-style-image: url('/images/sketchbook.png');
+    line-height: 1;
+    margin: 0px 0px 20px 45px;
+}
+
+@media (min-width: 769px){
+    .grid{
+        /*Set width, margin, border properties, background color, and grid properties */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .grid div{
+        /* Set border properties, padding, and background color */
+        border: 3px solid black;
+        border-radius: 20px;
+
+    }
+
+    .grid img{
+        /* Set width, margin, and display */
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .grid div:nth-child(3n+1)  {
+        /* Set box shadow */
+        }
+
+    .grid div:nth-child(3n)  {
+        /* Set box shadow */
+    }
+
+    .grid div:nth-child(3n+2)  {
+         /* Set box shadow */
+    }
+
+    p + p {
+         /* Set indentation */
+      }
+
+    p{
+         /* Set margin */
+    }
+    .grid ul li{
+        /* Set margin, line-spacing, list styling  */
+    }
+
+}
